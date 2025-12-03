@@ -3,16 +3,8 @@
 with open("input","r") as f:
     data = f.read().strip().split("\n")
 
-def remove_duplicates(lst):
-    out = []
-    for el in lst:
-        if el not in out:
-            out.append(el)
-    return out
 def listify_s(s):
     return [int(x) for x in list(s)]
-def cat(s):
-    return [str(x) for x in s]
 def find_max(lst):    
     m1,m2 = max(lst), None
     pos = lst.index(m1)
