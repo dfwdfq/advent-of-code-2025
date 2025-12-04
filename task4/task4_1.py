@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-import sys
-
-def print_mat(mat):
-    lst = ["".join(x) for x in mat]    
-    for el in lst:
-        print(el)
 
 with open(sys.argv[1],"r") as f:
     data = f.read().strip().split("\n")
